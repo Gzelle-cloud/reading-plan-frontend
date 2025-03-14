@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-MY_URL = "https://reading-plan.onrender.com";
+const MY_URL = "https://reading-plan.onrender.com";
 
 const getAllBooks = (setMyBooks) => {
   axios.get(`${MY_URL}/`)
