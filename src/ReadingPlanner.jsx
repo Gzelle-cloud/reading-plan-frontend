@@ -20,11 +20,20 @@ const ReadingPlanner = () => {
     setBookId(_id);
   }
 
+  const handleButtonClick = () => {
+    if (!title) return alert("Please enter a book author and/or a title");  
+
+    editing ? 
+    editBook(bookId, title, setTitle, category, setCategory, setMyBooks, setEditing) 
+    : 
+    addBook(title, setTitle, category, setCategory, setMyBooks)
+  }
+
   return (
     <div className='container'>
     <div className="background-overlay">
       <h1>Plan your reading journey!</h1>
-      <div className="section">
+      <form className="section">
         <select className="input" value={category} onChange={(e) => setCategory(e.target.value)}>
           <option value="fiction">Fiction</option>
           <option value="non-fiction">Non-fiction</option>
@@ -39,18 +48,13 @@ const ReadingPlanner = () => {
           value={ title }
           onChange={(e)=>setTitle(e.target.value)}
           />
-      </div>  
+      </form>  
       
 
       <div className="section">
         <button 
           className="btn"
-          onClick={() =>{
-          if (!title) return alert("Please enter a book author and/or a title");    
-          editing ? editBook(bookId, title, setTitle, category, setCategory, setMyBooks, setEditing) : addBook(title, setTitle, category, setCategory, setMyBooks)
-          }
-        }>          
-        
+          onClick={handleButtonClick}>
           { editing ? "Edit" : "Add" }
         </button>
       </div>
