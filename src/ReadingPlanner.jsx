@@ -67,7 +67,7 @@ const ReadingPlanner = () => {
             <MyBooks 
               bookProp = {book.title} key={book._id}
               categoryProp = {book.category}
-              updatingInputProp = {() => updatingInput(book._id, book.title)}
+              updatingInputProp = {() => updatingInput(book._id, book.title, book.category)}
               deleteBookProp = {() => deleteBook(book._id, setMyBooks, setLoading)}
             />
           )
