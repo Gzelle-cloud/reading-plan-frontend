@@ -32,11 +32,7 @@ Backend API hosted on [Render](https://reading-plan.onrender.com)
 
 ---
 
-## Installation
+## License
 
-### Backend
+This project is open-source and available under the [MIT License](LICENSE).
 
-1. Clone the repository and navigate to the backend folder:
-   ```bash
-   git clone <repo-url>
-   cd reading-plan/backend
