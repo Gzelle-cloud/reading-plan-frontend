@@ -1,12 +1,42 @@
-# React + Vite
+# Reading Planner 📚
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple **Reading Planner** web application to help users organize and track their reading journey. Users can add, edit, and delete books, and categorize them by type.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Demo
 
-## Expanding the ESLint configuration
+Live demo: [Reading Planner](https://readingplanner.netlify.app/)
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Backend API hosted on [Render](https://reading-plan.onrender.com)
+
+---
+
+## Features
+
+- Add books with title and category
+- Edit or delete books
+- Categorize books: Fiction, Non-fiction, Professional, Self-help, Children's books
+- Responsive design for desktop and mobile
+- Modern UI built with React and CSS
+- Backend API built with Node.js, Express, and MongoDB
+
+---
+
+## Technologies Used
+
+- **Frontend:** React, JavaScript, CSS3, HTML5
+- **Backend:** Node.js, Express.js, MongoDB, Mongoose
+- **HTTP Requests:** Axios
+- **Icons:** React-icons
+
+---
+
+## Installation
+
+### Backend
+
+1. Clone the repository and navigate to the backend folder:
+   ```bash
+   git clone <repo-url>
+   cd reading-plan/backend
